@@ -1,0 +1,12 @@
+{
+  "id": "kr.motp.sample-basic",
+  "name": { "ko": "예시 모드 (기본)", "en": "Sample Mod (basic)", "ja": "見本モッド（基本）" },
+  "version": "1.0.0",
+  "gameVersion": "0.4.x",
+  "author": "MOTP",
+  "description": {
+    "ko": "코드를 안 싣는 갈래들을 하나씩 건드려 보는 예시. 난이도 값·목표 한 줄·효과음 음량·글 한 줄.",
+    "en": "Touches the code-free categories one at a time.",
+    "ja": "コードを載せない系統を一つずつ触る見本。"
+  }
+}

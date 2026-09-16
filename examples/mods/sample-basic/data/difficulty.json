@@ -1,0 +1,5 @@
+{
+  "patrolSpeedScale": { "superHard": 1.4 },
+  "fogLimit": { "normal": 5 },
+  "fireplaceHints": { "superHard": true }
+}

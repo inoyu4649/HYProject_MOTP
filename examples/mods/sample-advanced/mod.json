@@ -1,0 +1,13 @@
+{
+  "id": "kr.motp.sample-advanced",
+  "name": { "ko": "예시 모드 (코드)", "en": "Sample Mod (advanced)", "ja": "見本モッド（コード）" },
+  "version": "1.0.0",
+  "gameVersion": "0.4.x",
+  "author": "MOTP",
+  "description": {
+    "ko": "코드를 싣는 갈래의 예시. 켜면 ⚠가 붙고 그 회차는 도전과제가 서지 않는다.",
+    "en": "The code-loading category. Marks the run with a warning; no achievements.",
+    "ja": "コードを載せる系統の見本。⚠が付き、その回では実績が立たない。"
+  },
+  "entry": "main.js"
+}

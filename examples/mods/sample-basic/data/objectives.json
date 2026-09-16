@@ -1,0 +1,13 @@
+{
+  "add": [
+    {
+      "id": "sample-extra",
+      "textKey": "common:mods.sampleObjective",
+      "sceneId": "M-4F-corridor",
+      "after": "ch2-lobby",
+      "tier": "side",
+      "active": { "chapter": "ch2" },
+      "done": { "flag": "gapsuNotebookRead" }
+    }
+  ]
+}
