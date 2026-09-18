@@ -1,0 +1,14 @@
+{
+  "id": "kr.motp.sample-forge",
+  "name": { "ko": "예시 모드 (Forge)", "en": "Sample Mod (Forge)", "ja": "見本モッド（Forge）" },
+  "version": "1.0.0",
+  "gameVersion": "0.5.x",
+  "author": "MOTP",
+  "description": {
+    "ko": "이벤트·Mixin·모드 도전과제를 한 번에 짚는 예시(v0.5.0, 13·14절). 켜면 ⚠가 붙고 그 회차는 Vanilla 도전과제가 서지 않지만, 이 모드가 더한 도전과제는 모드팩 원장에 따로 선다.",
+    "en": "Demonstrates events, mixin and mod achievements together (v0.5.0, §13-14). Marks the run with a warning and locks Vanilla achievements, but this mod's own achievement still lands in the modpack ledger.",
+    "ja": "イベント・Mixin・モッド実績を一度に確かめる見本（v0.5.0、13・14節）。⚠が付きVanilla実績は立たないが、このモッドが足した実績はモッドパック台帳に別途立つ。"
+  },
+  "entry": "main.js",
+  "capabilities": ["events", "mixin"]
+}
