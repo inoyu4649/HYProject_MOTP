@@ -27,6 +27,13 @@
 기록이 지워진 학교를 걸어 들어가, **남은 것만으로 사라진 것을 복원하는** 2D 탐색형 공포 퍼즐
 게임입니다. 한국어 · English · 日本語 세 언어를 지원합니다.
 
+> **이 게임의 공포는 놀래키는 데 있지 않습니다.** 정보의 공백, 기록의 모순, 어긋난 기억에서
+> 옵니다. 주제는 학교 괴담이 아니라 **기록과 망각**이고, 그래서 죽음의 순간이나 방법은 어느
+> 챕터에서도 직접 묘사하지 않습니다 — 애도가 공포보다 먼저입니다.
+>
+> 다만 **상실 · 애도 · 자책**을 정면으로 다룹니다. 지금 그런 이야기가 버겁다면, 다음에 오셔도
+> 게임은 그대로 있습니다.
+
 ---
 
 ## 플레이
@@ -151,6 +158,11 @@ PC판은 **모드를 지원합니다.** 게임 폴더의 `mods/`에 폴더를 �
 records have been erased, and **restoring what's gone from only what's left.** Korean, English and
 Japanese are fully supported.
 
+The horror here isn't in being startled — it comes from gaps in the record, contradictions between
+documents, and memories that don't line up. The subject is **record and forgetting**, not a ghost
+story, and no chapter ever depicts the moment or method of a death: mourning comes before fear.
+It does, however, deal directly with **loss, grief and self-blame.**
+
 **Play** — Browser demo (prologue only): `WEB_DEMO_URL` ·
 [**Download for Windows**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)
 (Windows 10/11 x64, fullscreen, **fully offline** — the game never makes a network request.)
@@ -185,6 +197,10 @@ The game is in **Early Access**: `0.x` means there's more to add, not that it's 
 
 **「過去の追憶」** は、記録が消された学校を歩き、**残されたものだけで失われたものを復元する**
 2D探索型ホラーパズルゲームです。韓国語・英語・日本語に対応しています。
+
+このゲームの恐怖は驚かすことにはありません。**記録の空白、文書どうしの矛盾、噛み合わない記憶**から
+生まれます。主題は学校の怪談ではなく **「記録と忘却」** であり、死の瞬間や手段はどの章でも直接
+描きません — 追悼が恐怖に先立ちます。ただし **喪失・哀悼・自責** は正面から扱います。
 
 **プレイ** — ブラウザ版デモ（プロローグまで）: `WEB_DEMO_URL` ·
 [**Windows版をダウンロード**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)
