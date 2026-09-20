@@ -2,7 +2,7 @@
   "id": "kr.motp.sample-forge",
   "name": { "ko": "예시 모드 (Forge)", "en": "Sample Mod (Forge)", "ja": "見本モッド（Forge）" },
   "version": "1.0.0",
-  "gameVersion": "0.5.x",
+  "gameVersion": "0.6.x",
   "author": "MOTP",
   "description": {
     "ko": "이벤트·Mixin·모드 도전과제를 한 번에 짚는 예시(v0.5.0, 13·14절). 켜면 ⚠가 붙고 그 회차는 Vanilla 도전과제가 서지 않지만, 이 모드가 더한 도전과제는 모드팩 원장에 따로 선다.",

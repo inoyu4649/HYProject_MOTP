@@ -5,7 +5,7 @@
   **손으로 옮기지 않는다.** `npm run build:public-repo`가 공개 저장소에 올릴 한 벌을
   `dist/public-repo/`에 통째로 조립한다:
 
-      README.md   ← 이 파일        MODDING.md  ← docs/MODDING.md        examples/ ← examples/
+      README.md   ← 이 파일        MODDING.md  ← docs/modding/MODDING.md        examples/ ← examples/
 
   그 스크립트가 함께 보는 것 넷 — 개발 문서 문자열 유출 · 깨진 상대 경로 링크 ·
   예시 모드의 `gameVersion`이 현재 게임 버전과 같은 줄인지 · 아래 `WEB_DEMO_URL`이 아직
@@ -120,7 +120,7 @@ PC판은 **모드를 지원합니다.** 게임 폴더의 `mods/`에 폴더를 �
 
 이 게임은 생성형 AI를 사용해 제작했습니다.
 
-- **코드** — Claude
+- **코드** — Claude (~v0.5.2) · ChatGPT (v0.6.0~)
 - **이미지 에셋** — ChatGPT (GPT-Image) · Gemini (Nano Banana)
 
 ---
@@ -181,7 +181,8 @@ TIMES club at the 2026 HAFS Festival "花様年華 : in bloom". Everything from 
 original to this game.
 
 **Made by** LEE MINGI (이민기 · 李民基), 2026.07.19 — 2026.09.17. Built with generative AI:
-**Claude** for code, **ChatGPT (GPT-Image)** and **Gemini (Nano Banana)** for image assets.
+**Claude (~v0.5.2)** and **ChatGPT (v0.6.0~)** for code, **ChatGPT (GPT-Image)** and
+**Gemini (Nano Banana)** for image assets.
 Font and open-source licenses ship in the `docs/` folder of the installed game and are listed in the
 in-game credits.
 
@@ -219,7 +220,7 @@ The game is in **Early Access**: `0.x` means there's more to add, not that it's 
 サークルTIMESが運営した脱出ゲーム〈Nightmare〉を原作としています。Chapter 1以降は本作独自の物語です。
 
 **制作** — <ruby>李民基<rt>イ・ミンギ</rt></ruby>（이민기 · LEE MINGI）、2026.07.19 — 2026.09.17。
-生成AIを使用しています： コードは **Claude**、画像アセットは **ChatGPT (GPT-Image)** と
+生成AIを使用しています： コードは **Claude（~v0.5.2）**・**ChatGPT（v0.6.0~）**、画像アセットは **ChatGPT (GPT-Image)** と
 **Gemini (Nano Banana)**。フォント・オープンソースのライセンス原文はインストール後の `docs/`
 フォルダ、およびゲーム内のクレジット画面にあります。
 
