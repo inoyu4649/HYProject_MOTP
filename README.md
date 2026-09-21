@@ -41,7 +41,7 @@
 | | |
 |---|---|
 | **웹 데모 (프롤로그)** | 설치 없이 브라우저에서 바로 — `WEB_DEMO_URL` |
-| **PC판 (Windows)** | [**최신 설치본 내려받기**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest) · [릴리스 목록](https://github.com/inoyu4649/HYProject_MOTP/releases) |
+| **PC판 (Windows / Linux)** | [**최신 배포물 내려받기**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest) · [릴리스 목록](https://github.com/inoyu4649/HYProject_MOTP/releases) |
 
 - **웹 데모는 프롤로그까지입니다.** 본편은 PC판에서 이어집니다. 데모를 끝내면 그 화면에서 곧장
   내려받기로 이어집니다.
@@ -53,14 +53,15 @@
 
 | | |
 |---|---|
-| 운영체제 | **Windows 10 / 11 (x64)** |
+| 운영체제 | **Windows 10 / 11 (x64)** · **Linux x64**(tar.gz 또는 Debian/Ubuntu DEB) |
 | 화면 | **전체화면 전용** · 1280×720 이상 |
 | 그래픽 | WebGPU 또는 WebGL2 — 설정에서 렌더러 API와 GPU를 고를 수 있습니다 |
-| 그 외 | Microsoft Edge WebView2 런타임 (Windows 11 기본 포함, 없으면 설치 시 안내) |
+| 그 외 | Windows: Microsoft Edge WebView2 · Linux: WebKitGTK 4.1 + GStreamer 코덱 |
 
-설치본이 놓는 것은 **`MOTP.exe` + `res/` + `docs/`** 셋뿐이고, 처음 실행하면 그 옆에
-`save/` · `logs/` · `mods/`가 생깁니다. 세이브는 게임 폴더 안 파일이라 통째로 옮기거나 백업할 수
-있습니다.
+포터블판(Windows zip·Linux tar.gz)은 **`MOTP(.exe)` + `res/` + `docs/`**를 한곳에 두고,
+처음 실행하면 그 옆에 `save/` · `logs/` · `mods/`가 생깁니다. Linux DEB판의 쓰기
+데이터는 `~/.local/share/com.hyproj.motp/`에 생깁니다. 자동 업데이트는 실행 형태가 아닌
+OS로만 갈라 Windows에서는 EXE, Linux에서는 DEB를 받습니다.
 
 ---
 
@@ -164,8 +165,8 @@ story, and no chapter ever depicts the moment or method of a death: mourning com
 It does, however, deal directly with **loss, grief and self-blame.**
 
 **Play** — Browser demo (prologue only): `WEB_DEMO_URL` ·
-[**Download for Windows**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)
-(Windows 10/11 x64, fullscreen, **fully offline** — the game never makes a network request.)
+[**Download for Windows or Linux**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)
+(Windows 10/11 x64 or Linux x64, fullscreen, **fully offline** after installation.)
 
 **Contents** — 40 puzzles across 162 maps · 106 readable in-world documents (each with a translation
 toggle) · 50 achievements · five ending branches plus a hidden scenario · six difficulties.
@@ -204,8 +205,8 @@ The game is in **Early Access**: `0.x` means there's more to add, not that it's 
 描きません — 追悼が恐怖に先立ちます。ただし **喪失・哀悼・自責** は正面から扱います。
 
 **プレイ** — ブラウザ版デモ（プロローグまで）: `WEB_DEMO_URL` ·
-[**Windows版をダウンロード**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)
-（Windows 10/11 x64・全画面専用・**完全オフライン**で最後まで進行します。）
+[**Windows / Linux版をダウンロード**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)
+（Windows 10/11 x64またはLinux x64・全画面専用・インストール後は**完全オフライン**で進行します。）
 
 **内容** — パズル40種／マップ162枚／閲覧できる作中文書106種（各文書に翻訳切替）／実績50種／
 エンディング5分岐と、その先の隠しシナリオ／難易度6段階（明記・記録・記憶・褪色・忘却・花樣）。

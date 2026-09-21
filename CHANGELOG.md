@@ -32,7 +32,35 @@
 열어 확인해 두는 것을 권한다.
 
 **버전 이력**: `'1.0'`(9-C-2 — 표기뿐) → **`0.1.0`**(소급) → **`0.2.0`**(9-D-3) →
-**`0.3.0`**(9-E 착수) → **`0.4.0`** → **`0.4.1`** → **`0.5.0`** → **`0.5.1`** → **`0.5.2`** → **`0.6.0`**.
+**`0.3.0`**(9-E 착수) → **`0.4.0`** → **`0.4.1`** → **`0.5.0`** → **`0.5.1`** → **`0.5.2`** → **`0.6.0`** → **`0.6.1`**.
+
+---
+
+## 0.6.1 — 2026-09-21
+
+**Windows에만 있던 문을 Linux에도 낸 판이다.** 같은 Tauri 셸이지만 Windows는
+WebView2와 EXE, Linux는 WebKitGTK와 DEB를 쓴다. 그 차이를 숨기지 않고 빌드·경로·
+업데이트의 갈림으로 명시했다.
+
+### Linux 배포 — 하나는 펴쳐서, 하나는 설치해서
+
+- WSL2 Ubuntu의 `/home/ubuntu/HYProject_MOTP_Code`에서 `scripts/build-linux.sh`를 돌리면
+  **범용 Linux tar.gz**와 **Debian `amd64.deb`**가 한번에 나온다. 첫 한 번의 WebKitGTK·GTK
+  빌드 의존성은 `scripts/setup-linux-build.sh`가 맡는다.
+- tar.gz판은 Windows zip판처럼 `MOTP` 옆에 `res/`·`docs/`를 두고, 실행하면
+  `save/`·`mods/`·`logs/`·`update/`가 그 옆에 생긴다. DEB판은 Linux 규약을 따라 읽기 자산을
+  `/usr/lib`, 쓰기 데이터를 XDG 데이터 경로에 두어 `/usr/bin`에 쓰려는 오류를 막았다.
+
+### WebKitGTK와 업데이트 — 플랫폼 차이를 정확히 한 번만
+
+- `additionalBrowserArgs`는 WebView2에만 들으므로 `tauri.windows.conf.json`으로 옮겼다. Linux에서는
+  WebKitGTK가 autoplay를 자체 설정하고, NVIDIA·Wayland의 빈 창/프로토콜 종료를 막기 위해
+  `WEBKIT_DISABLE_DMABUF_RENDERER=1`을 기본으로 둔다. 프레임을 크게 깎는 합성 전체 비활성화는
+  하지 않았다.
+- **업데이트는 설치 형태를 추측하지 않고 OS로만 나눈다.** Windows의 zip/설치판이
+  모두 `MOTP_<version>_x64-setup.exe`를 받듯, Linux의 tar.gz/DEB판은 모두
+  `MOTP_<version>_amd64.deb`를 받아 시스템 패키지 관리자에 넘긴다. tar.gz가 자기 몸을
+  덮어쓰는 길은 나중에 HY Launcher가 업데이트를 맡을 때 연다.
 
 ---
 
