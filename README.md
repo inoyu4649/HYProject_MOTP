@@ -14,6 +14,9 @@
   **올리기 전에 손봐야 하는 자리는 `WEB_DEMO_URL` 하나뿐이다**(세 언어 절에 각각 있다).
   버전 숫자와 내려받기 주소는 **일부러 안 적었다** — 릴리스 태그가 `latest` 고정이라
   링크가 버전과 무관하고, 그래서 판을 올려도 이 문서는 낡지 않는다.
+
+  **예외는 `v0.7.0` 하나다.** 단독 설치본이 나온 마지막 판이라는 사실은 판이 올라가도 바뀌지
+  않으므로, 그 태그만은 고정 주소로 적는다(`latest`는 다음 판부터 설치본이 없는 릴리스를 가리킨다).
 -->
 
 <h1 align="center">과거의 추억</h1>
@@ -41,27 +44,31 @@
 | | |
 |---|---|
 | **웹 데모 (프롤로그)** | 설치 없이 브라우저에서 바로 — `WEB_DEMO_URL` |
-| **PC판 (Windows / Linux)** | [**최신 배포물 내려받기**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest) · [릴리스 목록](https://github.com/inoyu4649/HYProject_MOTP/releases) |
+| **PC판 (Windows / Linux)** | [**HY 런처**](https://hyproj.com)로 설치 · 단독 설치본은 [v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)이 마지막 |
 
-- **웹 데모는 프롤로그까지입니다.** 본편은 PC판에서 이어집니다. 데모를 끝내면 그 화면에서 곧장
-  내려받기로 이어집니다.
-- **PC판은 인터넷이 필요 없습니다.** 설치 후 완전히 오프라인으로 끝까지 진행됩니다 — 정답 확인도,
-  버전 조회도 바깥에 묻지 않습니다.
-- 내려받기 링크는 **언제나 같은 주소**입니다(`latest` 고정 태그). 새 판이 나와도 링크는 안 바뀝니다.
+- **웹 데모는 프롤로그까지입니다.** 본편은 PC판에서 이어집니다.
+- **v0.7.0부터 설치와 업데이트는 HY 런처가 맡습니다.** 게임 안의 「업데이트 확인」은 없어졌습니다.
+  단독 설치본(EXE · MSI · DEB)은 **v0.7.0이 마지막**이고, 그 뒤의 판은 런처로만 받을 수 있습니다.
+- **PC판 게임은 인터넷이 필요 없습니다.** 설치 후 완전히 오프라인으로 끝까지 진행됩니다 — 정답
+  확인도 바깥에 묻지 않습니다. 새 판이 나왔는지 보는 일은 이제 런처가 하고, 게임은 아무것도 묻지
+  않습니다.
 
 ### 사양 (PC판)
 
 | | |
 |---|---|
-| 운영체제 | **Windows 10 / 11 (x64)** · **Linux x64**(tar.gz 또는 Debian/Ubuntu DEB) |
+| 운영체제 | **Windows 10 / 11 (x64)** · **Linux x64** |
 | 화면 | **전체화면 전용** · 1280×720 이상 |
 | 그래픽 | WebGPU 또는 WebGL2 — 설정에서 렌더러 API와 GPU를 고를 수 있습니다 |
 | 그 외 | Windows: Microsoft Edge WebView2 · Linux: WebKitGTK 4.1 + GStreamer 코덱 |
 
-포터블판(Windows zip·Linux tar.gz)은 **`MOTP(.exe)` + `res/` + `docs/`**를 한곳에 두고,
-처음 실행하면 그 옆에 `save/` · `logs/` · `mods/`가 생깁니다. Linux DEB판의 쓰기
-데이터는 `~/.local/share/com.hyproj.motp/`에 생깁니다. 자동 업데이트는 실행 형태가 아닌
-OS로만 갈라 Windows에서는 EXE, Linux에서는 DEB를 받습니다.
+런처는 게임을 `사용자 폴더\HYLauncher\motp`(Linux는 `~/HYLauncher/motp`)에 설치하고, 처음
+실행하면 그 옆에 `save/` · `logs/` · `mods/`가 생깁니다.
+
+**예전 단독 설치본과는 세이브를 공유하지 않습니다** — 두 설치본이 서로 다른 폴더를 보기
+때문입니다. 이어서 하려면 예전 세이브 폴더의 파일을 런처 설치본의 `save/`로 옮기면 됩니다.
+예전 세이브는 Windows에서는 **설치 폴더의 `save/`**, Linux DEB판에서는
+`~/.local/share/com.hyproj.motp/save/`, tar.gz판에서는 **압축을 푼 폴더의 `save/`**에 있습니다.
 
 ---
 
@@ -165,8 +172,12 @@ story, and no chapter ever depicts the moment or method of a death: mourning com
 It does, however, deal directly with **loss, grief and self-blame.**
 
 **Play** — Browser demo (prologue only): `WEB_DEMO_URL` ·
-[**Download for Windows or Linux**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)
+Windows / Linux: install through the [**HY Launcher**](https://hyproj.com)
 (Windows 10/11 x64 or Linux x64, fullscreen, **fully offline** after installation.)
+From v0.7.0 on, installing and updating is the launcher's job. **v0.7.0 is the last
+[standalone release](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)** (EXE · MSI · DEB);
+later versions are launcher-only. Saves from a standalone install aren't shared automatically —
+copy the files from its `save/` folder into the launcher install's `save/` to carry on.
 
 **Contents** — 40 puzzles across 162 maps · 106 readable in-world documents (each with a translation
 toggle) · 50 achievements · five ending branches plus a hidden scenario · six difficulties.
@@ -205,8 +216,12 @@ The game is in **Early Access**: `0.x` means there's more to add, not that it's 
 描きません — 追悼が恐怖に先立ちます。ただし **喪失・哀悼・自責** は正面から扱います。
 
 **プレイ** — ブラウザ版デモ（プロローグまで）: `WEB_DEMO_URL` ·
-[**Windows / Linux版をダウンロード**](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)
+Windows / Linux版は [**HY ランチャー**](https://hyproj.com) からインストール
 （Windows 10/11 x64またはLinux x64・全画面専用・インストール後は**完全オフライン**で進行します。）
+v0.7.0からインストールと更新はランチャーが担います。**単体インストーラーは
+[v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)が最後**（EXE・MSI・DEB）で、
+以降の版はランチャーからのみ入手できます。単体版のセーブは自動では引き継がれません — その `save/`
+フォルダのファイルをランチャー版の `save/` へ移せば続きから遊べます。
 
 **内容** — パズル40種／マップ162枚／閲覧できる作中文書106種（各文書に翻訳切替）／実績50種／
 エンディング5分岐と、その先の隠しシナリオ／難易度6段階（明記・記録・記憶・褪色・忘却・花樣）。
